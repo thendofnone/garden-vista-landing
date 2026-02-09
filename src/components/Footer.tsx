@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <h3 className="text-xl font-serif mb-6">Green Essence</h3>
+            <h3 className="text-xl font-serif mb-6">Paesaggista.art</h3>
             <p className="text-white/80 mb-6 max-w-xs">
               Creating harmonious outdoor spaces that inspire, rejuvenate, and connect people with nature.
             </p>
@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-12 pt-6 border-t border-white/10 text-white/60 text-sm text-center">
-          <p>&copy; {currentYear} Green Essence. All rights reserved.</p>
+          <p>&copy; {currentYear} Paesaggista.art. All rights reserved.</p>
         </div>
       </div>
     </footer>

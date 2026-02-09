@@ -47,13 +47,13 @@ const InstagramFeed = () => {
           <h2 className="text-3xl md:text-4xl font-serif mb-2 text-garden-dark-green">Follow Our <span className="text-garden-accent">Journey</span></h2>
           <p className="text-lg mb-4">Discover more inspiration on our Instagram</p>
           <a 
-            href="https://instagram.com/greenessence" 
+            href="https://instagram.com/paesaggista.art" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="inline-flex items-center text-garden-dark-green hover:text-garden-light-green transition-colors duration-200"
           >
             <Instagram size={20} className="mr-2" />
-            <span className="font-medium">@greenessence</span>
+            <span className="font-medium">@paesaggista.art</span>
           </a>
         </div>
 
@@ -136,7 +136,7 @@ const InstagramFeed = () => {
         
         <div className="text-center mt-8">
           <a 
-            href="https://www.instagram.com/greenessence/" 
+            href="https://www.instagram.com/paesaggista.art/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-block px-6 py-3 bg-garden-dark-green text-white rounded-lg hover:bg-garden-light-green transition-colors duration-300"
