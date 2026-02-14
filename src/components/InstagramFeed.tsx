@@ -1,10 +1,11 @@
 
 import React, { useEffect, useRef } from 'react';
 import { Instagram } from 'lucide-react';
+import { useScrollReveal } from '@/hooks/use-parallax';
 
 const InstagramFeed = () => {
-  // Reference for the container where we'll place our embedded posts
   const containerRef = useRef<HTMLDivElement>(null);
+  const { ref: revealRef, isVisible } = useScrollReveal();
   
   useEffect(() => {
     // This function will load Instagram's embed script
@@ -41,8 +42,9 @@ const InstagramFeed = () => {
   }, []);
 
   return (
-    <section id="instagram" className="section-padding bg-garden-cream">
-      <div className="container mx-auto max-w-6xl">
+    <section id="instagram" className="section-padding bg-garden-cream overflow-hidden">
+      <div className="container mx-auto max-w-6xl" ref={revealRef}>
+        <div className={`scroll-reveal ${isVisible ? 'visible' : ''}`}>
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-2 text-garden-dark-green">Follow Our <span className="text-garden-accent">Journey</span></h2>
           <p className="text-lg mb-4">Discover more inspiration on our Instagram</p>
@@ -143,6 +145,7 @@ const InstagramFeed = () => {
           >
             View More on Instagram
           </a>
+        </div>
         </div>
       </div>
     </section>
