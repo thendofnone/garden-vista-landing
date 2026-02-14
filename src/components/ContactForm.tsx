@@ -10,7 +10,8 @@ const ContactForm = () => {
     email: '',
     phone: '',
     message: '',
-    projectType: ''
+    projectType: '',
+    website: '' // honeypot field — bots fill this, humans don't see it
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -71,7 +72,7 @@ const ContactForm = () => {
 
       if (response.ok && data.success) {
         setIsSubmitted(true);
-        setFormData({ name: '', email: '', phone: '', message: '', projectType: '' });
+        setFormData({ name: '', email: '', phone: '', message: '', projectType: '', website: '' });
         setTimeout(() => setIsSubmitted(false), 5000);
       } else {
         alert(data.message || 'Failed to send message. Please try again.');
@@ -103,6 +104,19 @@ const ContactForm = () => {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
+                {/* Honeypot field — hidden from humans, traps bots */}
+                <div className="absolute opacity-0 -z-10 h-0 overflow-hidden" aria-hidden="true">
+                  <label htmlFor="website">Website</label>
+                  <input
+                    type="text"
+                    id="website"
+                    name="website"
+                    value={formData.website}
+                    onChange={handleChange}
+                    tabIndex={-1}
+                    autoComplete="off"
+                  />
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1">Name *</label>
