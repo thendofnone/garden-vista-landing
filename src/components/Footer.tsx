@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <h3 className="text-xl font-serif mb-6">Paesaggista.art</h3>
+            <h3 className="text-xl font-semibold mb-6">Paesaggista.art</h3>
             <p className="text-white/80 mb-6 max-w-xs">
               Creating harmonious outdoor spaces that inspire, rejuvenate, and connect people with nature.
             </p>
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-serif mb-6">Quick Links</h3>
+            <h3 className="text-xl font-semibold mb-6">Quick Links</h3>
             <nav className="flex flex-col space-y-3">
               <a href="#about" className="text-white/80 hover:text-garden-accent transition-colors">About</a>
               <a href="#projects" className="text-white/80 hover:text-garden-accent transition-colors">Projects</a>
@@ -49,7 +49,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-serif mb-6">Contact</h3>
+            <h3 className="text-xl font-semibold mb-6">Contact</h3>
             <div className="space-y-4">
               <div className="flex items-start">
                 <Mail className="text-garden-accent mr-3 mt-1" size={18} />
