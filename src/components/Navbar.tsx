@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full bg-garden-cream/95 backdrop-blur-sm z-50 shadow-sm">
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex justify-between items-center h-20">
-          <div className="text-garden-dark-green text-2xl font-serif">
+          <div className="text-garden-dark-green text-2xl font-sans font-semibold">
             <a href="#" className="flex items-center">
               <span className="tracking-wide">Paesaggista.art</span>
             </a>

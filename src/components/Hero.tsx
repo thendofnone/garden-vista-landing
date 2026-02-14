@@ -1,11 +1,17 @@
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Play, Pause } from 'lucide-react';
-import { cn } from '@/lib/utils';
 
 const Hero = () => {
   const [isPlaying, setIsPlaying] = useState(true);
+  const [scrollY, setScrollY] = useState(0);
   const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const togglePlayPause = () => {
     if (videoRef.current) {
@@ -20,7 +26,7 @@ const Hero = () => {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Video Background */}
+      {/* Video Background with parallax */}
       <div className="absolute inset-0 w-full h-full">
         <video
           ref={videoRef}
@@ -29,17 +35,20 @@ const Hero = () => {
           loop
           className="object-cover w-full h-full"
           playsInline
+          style={{ transform: `translateY(${scrollY * 0.4}px) scale(1.1)` }}
         >
           <source src="/garden-design.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-6 animate-fade-in">
+      {/* Content with inverse parallax */}
+      <div 
+        className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4"
+        style={{ transform: `translateY(${scrollY * -0.2}px)` }}
+      >
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
           Paesaggista.art <br className="hidden md:block" />
           <span className="text-garden-accent">Watercolor Meets Design</span>
         </h1>

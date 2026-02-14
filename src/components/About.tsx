@@ -1,61 +1,68 @@
 
 import React from 'react';
+import { useParallax, useScrollReveal } from '@/hooks/use-parallax';
 
 const About = () => {
+  const { ref: parallaxRef, offset } = useParallax(0.15);
+  const { ref: revealRef, isVisible } = useScrollReveal();
+
   return (
-    <section id="about" className="section-padding bg-garden-cream">
+    <section id="about" className="section-padding bg-garden-cream overflow-hidden">
       <div className="container mx-auto max-w-6xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="md:order-2">
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1518495973542-4542c06a5843" 
-                alt="Garden Designer Portrait" 
-                className="rounded-lg shadow-xl w-full"
-              />
-              <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-garden-accent rounded-full hidden md:block"></div>
-            </div>
-          </div>
-          
-          <div className="md:order-1">
-            <h2 className="text-3xl md:text-4xl font-serif mb-6 text-garden-dark-green">About <span className="text-garden-accent">Paesaggista.art</span></h2>
-            
-            <div className="space-y-4 text-foreground">
-              <p className="text-lg">
-                Welcome to Paesaggista.art — where watercolour artistry meets professional garden design, creating unique renderings that bring your landscape vision to life.
-              </p>
-              
-              <p>
-                My philosophy is simple: gardens should be extensions of your home and personality, 
-                creating harmonious spaces that connect you with nature while reflecting your unique style.
-              </p>
-              
-              <p>
-                Drawing inspiration from both classical and contemporary design principles, 
-                I work closely with clients to understand their vision, considering the site's natural attributes, 
-                architectural context, and sustainability needs.
-              </p>
-              
-              <p>
-                Whether you're dreaming of a peaceful sanctuary, a vibrant entertainment space, or a productive 
-                kitchen garden, I bring creativity, technical expertise and a deep love for plants to every project.
-              </p>
+        <div ref={revealRef} className={`scroll-reveal ${isVisible ? 'visible' : ''}`}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="md:order-2">
+              <div className="relative" ref={parallaxRef}>
+                <img 
+                  src="https://images.unsplash.com/photo-1518495973542-4542c06a5843" 
+                  alt="Garden Designer Portrait" 
+                  className="rounded-lg shadow-xl w-full parallax-image"
+                  style={{ transform: `translateY(${offset * 0.3}px)` }}
+                />
+                <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-garden-accent rounded-full hidden md:block"></div>
+              </div>
             </div>
             
-            <div className="mt-8 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-10">
-              <div>
-                <p className="text-3xl font-serif text-garden-dark-green">200+</p>
-                <p className="text-sm text-garden-light-green uppercase tracking-wider">Projects Completed</p>
+            <div className="md:order-1">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-garden-dark-green">About <span className="text-garden-accent">Paesaggista.art</span></h2>
+              
+              <div className="space-y-4 text-foreground">
+                <p className="text-lg">
+                  Welcome to Paesaggista.art — where watercolour artistry meets professional garden design, creating unique renderings that bring your landscape vision to life.
+                </p>
+                
+                <p>
+                  My philosophy is simple: gardens should be extensions of your home and personality, 
+                  creating harmonious spaces that connect you with nature while reflecting your unique style.
+                </p>
+                
+                <p>
+                  Drawing inspiration from both classical and contemporary design principles, 
+                  I work closely with clients to understand their vision, considering the site's natural attributes, 
+                  architectural context, and sustainability needs.
+                </p>
+                
+                <p>
+                  Whether you're dreaming of a peaceful sanctuary, a vibrant entertainment space, or a productive 
+                  kitchen garden, I bring creativity, technical expertise and a deep love for plants to every project.
+                </p>
               </div>
               
-              <div>
-                <p className="text-3xl font-serif text-garden-dark-green">15+</p>
-                <p className="text-sm text-garden-light-green uppercase tracking-wider">Years Experience</p>
-              </div>
-              
-              <div>
-                <p className="text-3xl font-serif text-garden-dark-green">26</p>
-                <p className="text-sm text-garden-light-green uppercase tracking-wider">Design Awards</p>
+              <div className="mt-8 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-10">
+                <div>
+                  <p className="text-3xl font-bold text-garden-dark-green">200+</p>
+                  <p className="text-sm text-garden-light-green uppercase tracking-wider">Projects Completed</p>
+                </div>
+                
+                <div>
+                  <p className="text-3xl font-bold text-garden-dark-green">15+</p>
+                  <p className="text-sm text-garden-light-green uppercase tracking-wider">Years Experience</p>
+                </div>
+                
+                <div>
+                  <p className="text-3xl font-bold text-garden-dark-green">26</p>
+                  <p className="text-sm text-garden-light-green uppercase tracking-wider">Design Awards</p>
+                </div>
               </div>
             </div>
           </div>

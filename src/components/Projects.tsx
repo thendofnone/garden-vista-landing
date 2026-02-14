@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
+import { useParallax, useScrollReveal } from '@/hooks/use-parallax';
 
 const projects = [
   {
@@ -34,19 +35,23 @@ const projects = [
 ];
 
 const Projects = () => {
+  const { ref: revealRef, isVisible } = useScrollReveal();
+
   return (
     <section id="projects" className="section-padding bg-white">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-serif mb-6 text-garden-dark-green">Featured <span className="text-garden-accent">Projects</span></h2>
-          <p className="text-lg max-w-3xl mx-auto text-foreground/80">
-            Explore a selection of our transformative garden designs, each tailored to our clients' unique visions and spaces
-          </p>
+        <div ref={revealRef} className={`scroll-reveal ${isVisible ? 'visible' : ''}`}>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-garden-dark-green">Featured <span className="text-garden-accent">Projects</span></h2>
+            <p className="text-lg max-w-3xl mx-auto text-foreground/80">
+              Explore a selection of our transformative garden designs, each tailored to our clients' unique visions and spaces
+            </p>
+          </div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+          {projects.map((project, index) => (
+            <ProjectCard key={project.id} project={project} index={index} />
           ))}
         </div>
         
@@ -63,32 +68,38 @@ const Projects = () => {
   );
 };
 
-const ProjectCard = ({ project }: { project: any }) => {
+const ProjectCard = ({ project, index }: { project: any; index: number }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const { ref: parallaxRef, offset } = useParallax(0.08);
+  const { ref: revealRef, isVisible } = useScrollReveal();
   
   return (
-    <div 
-      className="rounded-lg overflow-hidden shadow-lg relative img-hover-zoom"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <img 
-        src={project.image} 
-        alt={project.title}
-        className="w-full h-80 object-cover" 
-      />
-      <div className={cn(
-        "absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent transition-all duration-300",
-        isHovered ? "h-full flex flex-col justify-end" : "h-1/2"
-      )}>
-        <span className="text-garden-accent text-sm uppercase tracking-wider">{project.category}</span>
-        <h3 className="text-xl font-serif text-white mt-2">{project.title}</h3>
-        <p className={cn(
-          "text-white/80 mt-2 transition-opacity duration-300",
-          isHovered ? "opacity-100" : "opacity-0 md:opacity-100"
+    <div ref={revealRef} className={`scroll-reveal ${isVisible ? 'visible' : ''}`} style={{ transitionDelay: `${index * 0.15}s` }}>
+      <div 
+        className="rounded-lg overflow-hidden shadow-lg relative img-hover-zoom"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        ref={parallaxRef}
+      >
+        <img 
+          src={project.image} 
+          alt={project.title}
+          className="w-full h-80 object-cover parallax-image" 
+          style={{ transform: `translateY(${offset * 0.2}px) scale(1.1)` }}
+        />
+        <div className={cn(
+          "absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent transition-all duration-300",
+          isHovered ? "h-full flex flex-col justify-end" : "h-1/2"
         )}>
-          {project.description}
-        </p>
+          <span className="text-garden-accent text-sm uppercase tracking-wider">{project.category}</span>
+          <h3 className="text-xl font-bold text-white mt-2">{project.title}</h3>
+          <p className={cn(
+            "text-white/80 mt-2 transition-opacity duration-300",
+            isHovered ? "opacity-100" : "opacity-0 md:opacity-100"
+          )}>
+            {project.description}
+          </p>
+        </div>
       </div>
     </div>
   );

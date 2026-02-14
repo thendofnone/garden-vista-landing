@@ -78,7 +78,7 @@ const ContactForm = () => {
     <section id="contact" className="section-padding bg-white">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-serif mb-6 text-garden-dark-green">Get In <span className="text-garden-accent">Touch</span></h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-garden-dark-green">Get In <span className="text-garden-accent">Touch</span></h2>
           <p className="text-lg max-w-3xl mx-auto text-foreground/80">
             Ready to transform your outdoor space? Contact us to discuss your vision and schedule a consultation
           </p>
@@ -88,7 +88,7 @@ const ContactForm = () => {
           <div className="lg:col-span-2">
             {isSubmitted ? (
               <div className="bg-garden-light-green/20 border border-garden-light-green text-garden-dark-green rounded-lg p-6 text-center">
-                <h3 className="text-xl font-serif mb-2">Thank You!</h3>
+                <h3 className="text-xl font-semibold mb-2">Thank You!</h3>
                 <p>Your message has been sent successfully. We'll get back to you shortly.</p>
               </div>
             ) : (
@@ -178,7 +178,7 @@ const ContactForm = () => {
           </div>
           
           <div className="bg-garden-cream rounded-lg p-8">
-            <h3 className="text-xl font-serif mb-6 text-garden-dark-green">Contact Information</h3>
+            <h3 className="text-xl font-semibold mb-6 text-garden-dark-green">Contact Information</h3>
             
             <div className="space-y-6">
               <div className="flex items-start">
