@@ -1,11 +1,24 @@
 
-import React, { useState, useRef, useEffect } from 'react';
-import { Play, Pause } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { cn } from '@/lib/utils';
+
+const heroImages = [
+  "https://images.unsplash.com/photo-1469474968028-56623f02e42e",
+  "https://images.unsplash.com/photo-1518495973542-4542c06a5843",
+  "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07",
+  "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9",
+];
 
 const Hero = () => {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [scrollY, setScrollY] = useState(0);
-  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -13,20 +26,62 @@ const Hero = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const togglePlayPause = () => {
-    if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.pause();
-      } else {
-        videoRef.current.play();
-      }
-      setIsPlaying(!isPlaying);
-    }
-  };
-
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Video Background with parallax */}
+      {/* Image Carousel Background with parallax */}
+      <div className="absolute inset-0 w-full h-full">
+        {heroImages.map((src, index) => (
+          <img
+            key={src}
+            src={src}
+            alt={`Garden design ${index + 1}`}
+            className={cn(
+              "absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out",
+              index === currentIndex ? "opacity-100" : "opacity-0"
+            )}
+            style={{ transform: `translateY(${scrollY * 0.4}px) scale(1.1)` }}
+          />
+        ))}
+        <div className="absolute inset-0 bg-black/40" />
+      </div>
+
+      {/* Carousel indicators */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+        {heroImages.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentIndex(index)}
+            className={cn(
+              "w-2.5 h-2.5 rounded-full transition-all duration-300",
+              index === currentIndex ? "bg-white w-8" : "bg-white/50"
+            )}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
+
+      {/* Content with inverse parallax */}
+      <div
+        className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4"
+        style={{ transform: `translateY(${scrollY * -0.2}px)` }}
+      >
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 hero-text-rise drop-shadow-[0_4px_24px_rgba(0,0,0,0.5)]">
+          Paesaggista.art <br className="hidden md:block" />
+          <span className="text-garden-accent drop-shadow-[0_2px_12px_rgba(229,184,110,0.4)]">Watercolor Meets Design</span>
+        </h1>
+        <p className="text-xl md:text-2xl text-white/90 max-w-2xl mb-10 hero-text-rise drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]" style={{ animationDelay: "0.3s" }}>
+          Professional garden design that creates harmony between nature and architecture
+        </p>
+        <a
+          href="#contact"
+          className="bg-garden-dark-green text-white px-8 py-4 rounded-md hover:bg-garden-light-green transition-colors duration-300 font-medium tracking-wide hero-text-rise drop-shadow-[0_4px_16px_rgba(0,0,0,0.3)]"
+          style={{ animationDelay: "0.6s" }}
+        >
+          Book a Consultation
+        </a>
+      </div>
+
+      {/* VIDEO HERO — commented out for future use
       <div className="absolute inset-0 w-full h-full">
         <video
           ref={videoRef}
@@ -38,40 +93,10 @@ const Hero = () => {
           style={{ transform: `translateY(${scrollY * 0.4}px) scale(1.1)` }}
         >
           <source src="/garden-design.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
         </video>
         <div className="absolute inset-0 bg-black/40" />
       </div>
-
-      {/* Content with inverse parallax */}
-      <div 
-        className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4"
-        style={{ transform: `translateY(${scrollY * -0.2}px)` }}
-      >
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
-          Paesaggista.art <br className="hidden md:block" />
-          <span className="text-garden-accent">Watercolor Meets Design</span>
-        </h1>
-        <p className="text-xl md:text-2xl text-white/90 max-w-2xl mb-10 animate-fade-in" style={{animationDelay: "0.2s"}}>
-          Professional garden design that creates harmony between nature and architecture
-        </p>
-        <a 
-          href="#contact" 
-          className="bg-garden-dark-green text-white px-8 py-4 rounded-md hover:bg-garden-light-green transition-colors duration-300 font-medium tracking-wide animate-fade-in"
-          style={{animationDelay: "0.4s"}}
-        >
-          Book a Consultation
-        </a>
-      </div>
-
-      {/* Video controls */}
-      <button 
-        onClick={togglePlayPause}
-        className="absolute bottom-8 right-8 z-20 text-white/80 hover:text-white bg-black/30 hover:bg-black/50 p-3 rounded-full transition-all"
-        aria-label={isPlaying ? "Pause video" : "Play video"}
-      >
-        {isPlaying ? <Pause size={24} /> : <Play size={24} />}
-      </button>
+      */}
     </section>
   );
 };
