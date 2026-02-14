@@ -1,23 +1,41 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 
 export const useParallax = (speed: number = 0.3) => {
-  const ref = useRef<HTMLDivElement>(null);
-  const [offset, setOffset] = useState(0);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const targetRef = useRef<HTMLElement | null>(null);
+  const rafId = useRef<number>(0);
+
+  const setTargetRef = useCallback((el: HTMLElement | null) => {
+    targetRef.current = el;
+  }, []);
 
   useEffect(() => {
+    const update = () => {
+      if (!containerRef.current || !targetRef.current) return;
+      const rect = containerRef.current.getBoundingClientRect();
+      const viewH = window.innerHeight;
+      // Normalized: 0 when element enters bottom, 1 when it exits top
+      const progress = (viewH - rect.top) / (viewH + rect.height);
+      const clamped = Math.max(0, Math.min(1, progress));
+      // Center the parallax around 0.5 so it moves symmetrically
+      const offset = (clamped - 0.5) * speed * 200;
+      targetRef.current.style.transform = `translateY(${offset}px)`;
+    };
+
     const handleScroll = () => {
-      if (!ref.current) return;
-      const rect = ref.current.getBoundingClientRect();
-      const scrolled = window.innerHeight - rect.top;
-      setOffset(scrolled * speed);
+      cancelAnimationFrame(rafId.current);
+      rafId.current = requestAnimationFrame(update);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      cancelAnimationFrame(rafId.current);
+    };
   }, [speed]);
 
-  return { ref, offset };
+  return { containerRef, setTargetRef };
 };
 
 export const useScrollReveal = () => {
@@ -31,7 +49,7 @@ export const useScrollReveal = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.15 }
+      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
     );
 
     if (ref.current) observer.observe(ref.current);

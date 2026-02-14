@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { cn } from '@/lib/utils';
 import { useParallax, useScrollReveal } from '@/hooks/use-parallax';
 
@@ -70,22 +70,26 @@ const Projects = () => {
 
 const ProjectCard = ({ project, index }: { project: any; index: number }) => {
   const [isHovered, setIsHovered] = useState(false);
-  const { ref: parallaxRef, offset } = useParallax(0.08);
+  const { containerRef, setTargetRef } = useParallax(0.2);
   const { ref: revealRef, isVisible } = useScrollReveal();
+
+  const imgRef = useCallback((el: HTMLImageElement | null) => {
+    setTargetRef(el);
+  }, [setTargetRef]);
   
   return (
     <div ref={revealRef} className={`scroll-reveal ${isVisible ? 'visible' : ''}`} style={{ transitionDelay: `${index * 0.15}s` }}>
       <div 
-        className="rounded-lg overflow-hidden shadow-lg relative img-hover-zoom"
+        className="rounded-lg overflow-hidden shadow-lg relative"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        ref={parallaxRef}
+        ref={containerRef}
       >
         <img 
+          ref={imgRef}
           src={project.image} 
           alt={project.title}
-          className="w-full h-80 object-cover parallax-image" 
-          style={{ transform: `translateY(${offset * 0.2}px) scale(1.1)` }}
+          className="w-full h-80 object-cover will-change-transform scale-110" 
         />
         <div className={cn(
           "absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent transition-all duration-300",

@@ -1,10 +1,14 @@
 
-import React from 'react';
+import React, { useCallback } from 'react';
 import { useParallax, useScrollReveal } from '@/hooks/use-parallax';
 
 const About = () => {
-  const { ref: parallaxRef, offset } = useParallax(0.15);
+  const { containerRef, setTargetRef } = useParallax(0.3);
   const { ref: revealRef, isVisible } = useScrollReveal();
+
+  const imgRef = useCallback((el: HTMLImageElement | null) => {
+    setTargetRef(el);
+  }, [setTargetRef]);
 
   return (
     <section id="about" className="section-padding bg-garden-cream overflow-hidden">
@@ -12,12 +16,12 @@ const About = () => {
         <div ref={revealRef} className={`scroll-reveal ${isVisible ? 'visible' : ''}`}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="md:order-2">
-              <div className="relative" ref={parallaxRef}>
+              <div className="relative overflow-hidden rounded-lg" ref={containerRef}>
                 <img 
+                  ref={imgRef}
                   src="https://images.unsplash.com/photo-1518495973542-4542c06a5843" 
                   alt="Garden Designer Portrait" 
-                  className="rounded-lg shadow-xl w-full parallax-image"
-                  style={{ transform: `translateY(${offset * 0.3}px)` }}
+                  className="shadow-xl w-full will-change-transform scale-110"
                 />
                 <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-garden-accent rounded-full hidden md:block"></div>
               </div>
@@ -30,18 +34,15 @@ const About = () => {
                 <p className="text-lg">
                   Welcome to Paesaggista.art — where watercolour artistry meets professional garden design, creating unique renderings that bring your landscape vision to life.
                 </p>
-                
                 <p>
                   My philosophy is simple: gardens should be extensions of your home and personality, 
                   creating harmonious spaces that connect you with nature while reflecting your unique style.
                 </p>
-                
                 <p>
                   Drawing inspiration from both classical and contemporary design principles, 
                   I work closely with clients to understand their vision, considering the site's natural attributes, 
                   architectural context, and sustainability needs.
                 </p>
-                
                 <p>
                   Whether you're dreaming of a peaceful sanctuary, a vibrant entertainment space, or a productive 
                   kitchen garden, I bring creativity, technical expertise and a deep love for plants to every project.
@@ -53,12 +54,10 @@ const About = () => {
                   <p className="text-3xl font-bold text-garden-dark-green">200+</p>
                   <p className="text-sm text-garden-light-green uppercase tracking-wider">Projects Completed</p>
                 </div>
-                
                 <div>
                   <p className="text-3xl font-bold text-garden-dark-green">15+</p>
                   <p className="text-sm text-garden-light-green uppercase tracking-wider">Years Experience</p>
                 </div>
-                
                 <div>
                   <p className="text-3xl font-bold text-garden-dark-green">26</p>
                   <p className="text-sm text-garden-light-green uppercase tracking-wider">Design Awards</p>
