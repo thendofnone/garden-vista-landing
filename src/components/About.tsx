@@ -1,6 +1,7 @@
 
 import React, { useCallback } from 'react';
 import { useParallax, useScrollReveal } from '@/hooks/use-parallax';
+import aboutImg from '@/assets/about-formeverdi.png';
 
 const About = () => {
   const { containerRef, setTargetRef } = useParallax(0.3);
@@ -19,7 +20,7 @@ const About = () => {
               <div className="relative overflow-hidden rounded-lg" ref={containerRef}>
                 <img 
                   ref={imgRef}
-                  src="https://images.unsplash.com/photo-1518495973542-4542c06a5843" 
+                  src={aboutImg} 
                   alt="Garden Designer Portrait" 
                   className="shadow-xl w-full will-change-transform scale-110"
                 />
