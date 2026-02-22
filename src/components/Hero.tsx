@@ -1,12 +1,11 @@
 
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
+import heroImg1 from '@/assets/formeverdi-01.png';
+import heroImg2 from '@/assets/formeverdi-02.png';
+import heroImg3 from '@/assets/formeverdi-03.png';
 
-const heroImages = [
-"https://images.unsplash.com/photo-1469474968028-56623f02e42e",
-"https://images.unsplash.com/photo-1518495973542-4542c06a5843",
-"https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07",
-"https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9"];
+const heroImages = [heroImg1, heroImg2, heroImg3];
 
 
 const Hero = () => {
