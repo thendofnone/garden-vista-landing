@@ -49,13 +49,13 @@ const InstagramFeed = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-2 text-garden-dark-green">Follow Our <span className="text-garden-accent">Journey</span></h2>
           <p className="text-lg mb-4">Discover more inspiration on our Instagram</p>
           <a 
-            href="https://instagram.com/paesaggista.art" 
+            href="https://instagram.com/formeverdi" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="inline-flex items-center text-garden-dark-green hover:text-garden-light-green transition-colors duration-200"
           >
             <Instagram size={20} className="mr-2" />
-            <span className="font-medium">@paesaggista.art</span>
+            <span className="font-medium">@formeverdi</span>
           </a>
         </div>
 
@@ -138,7 +138,7 @@ const InstagramFeed = () => {
         
         <div className="text-center mt-8">
           <a 
-            href="https://www.instagram.com/paesaggista.art/" 
+            href="https://www.instagram.com/formeverdi/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-block px-6 py-3 bg-garden-dark-green text-white rounded-lg hover:bg-garden-light-green transition-colors duration-300"

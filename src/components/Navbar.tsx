@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           <div className="text-garden-dark-green text-2xl font-sans font-semibold">
             <a href="#" className="flex items-center">
-              <span className="tracking-wide">Paesaggista.art</span>
+              <span className="tracking-wide">Forme Verdi</span>
             </a>
           </div>
 

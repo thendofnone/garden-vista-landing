@@ -28,11 +28,11 @@ const About = () => {
             </div>
             
             <div className="md:order-1">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-garden-dark-green">About <span className="text-garden-accent">Paesaggista.art</span></h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-garden-dark-green">About <span className="text-garden-accent">Forme Verdi</span></h2>
               
               <div className="space-y-4 text-foreground">
                 <p className="text-lg">
-                  Welcome to Paesaggista.art — where watercolour artistry meets professional garden design, creating unique renderings that bring your landscape vision to life.
+                   Welcome to Forme Verdi — where watercolour artistry meets professional garden design, creating unique renderings that bring your landscape vision to life.
                 </p>
                 <p>
                   My philosophy is simple: gardens should be extensions of your home and personality, 

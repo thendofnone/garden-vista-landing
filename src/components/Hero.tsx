@@ -66,7 +66,7 @@ const Hero = () => {
         style={{ transform: `translateY(${scrollY * -0.2}px)` }}>
 
         <h1 className="text-4xl lg:text-7xl text-white mb-6 hero-text-rise drop-shadow-[0_4px_24px_rgba(0,0,0,0.5)] font-medium font-sans text-justify md:text-6xl">
-          Paesaggista.art <br className="hidden md:block" />
+          Forme Verdi <br className="hidden md:block" />
           <span className="text-garden-accent drop-shadow-[0_2px_12px_rgba(229,184,110,0.4)]">Watercolor Meets Design</span>
         </h1>
         <p className="text-xl md:text-2xl text-white/90 max-w-2xl mb-10 hero-text-rise drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)] text-left" style={{ animationDelay: "0.3s" }}>
