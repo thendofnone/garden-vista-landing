@@ -1,14 +1,29 @@
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import logo from '@/assets/logo.svg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-garden-cream/95 backdrop-blur-sm z-50 shadow-sm">
+    <nav
+      className={cn(
+        "fixed top-0 left-0 w-full z-50 transition-all duration-500",
+        scrolled
+          ? "bg-garden-cream/95 backdrop-blur-sm shadow-sm translate-y-0"
+          : "bg-transparent -translate-y-full"
+      )}
+    >
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex justify-between items-center h-20">
           <a href="#" className="flex items-center">
@@ -53,6 +68,7 @@ const Navbar = () => {
   );
 };
 
+// NavLink and MobileNavLink components
 const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
   return (
     <a 
