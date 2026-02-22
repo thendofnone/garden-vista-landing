@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex justify-between items-center h-20">
           <a href="#" className="flex items-center gap-2">
-            <img src={logo} alt="Forme Verdi logo" className="h-12 w-auto" />
+            <img src={logo} alt="Forme Verdi logo" className="h-16 w-auto" />
             <span className="text-garden-dark-green text-2xl font-sans font-semibold tracking-wide">Forme Verdi</span>
           </a>
 
