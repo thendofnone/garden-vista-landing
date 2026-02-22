@@ -69,7 +69,7 @@ const Hero = () => {
           <span className="text-garden-accent drop-shadow-[0_2px_12px_rgba(229,184,110,0.4)]">Progetto l'equilibrio tra spazio e natura</span>
         </h1>
         <p className="text-xl md:text-2xl text-white/90 max-w-2xl mb-10 hero-text-rise drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)] text-left" style={{ animationDelay: "0.3s" }}>
-          Giardini vivibili, sostenibili e pensati per il clima contemporaneo
+          Ogni giardino nasce dall'equilibrio tra spazio, natura e clima. Disegno ambienti verdi vivibili e destinati a durare
         </p>
         <a
           href="#contact"
