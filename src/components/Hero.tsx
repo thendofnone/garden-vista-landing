@@ -76,7 +76,7 @@ const Hero = () => {
           className="bg-garden-dark-green text-white px-8 py-4 rounded-md hover:bg-garden-light-green transition-colors duration-300 font-medium tracking-wide hero-text-rise drop-shadow-[0_4px_16px_rgba(0,0,0,0.3)] text-center"
           style={{ animationDelay: "0.6s" }}>
 
-          Book a Consultation
+          Contattami per una consulenza
         </a>
       </div>
 
