@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex justify-between items-center h-20">
           <a href="#" className="flex items-center">
-            <img src={logo} alt="Forme Verdi" className="h-16 w-auto" />
+            <img src={logo} alt="Forme Verdi" style={{ height: '48px', width: 'auto' }} />
           </a>
 
           {/* Desktop menu */}
