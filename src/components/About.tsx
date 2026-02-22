@@ -28,40 +28,24 @@ const About = () => {
             </div>
             
             <div className="md:order-1">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-garden-dark-green">About <span className="text-garden-accent">Forme Verdi</span></h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-garden-dark-green">Sono <span className="text-garden-accent">Magdalena Szczepanska</span></h2>
               
               <div className="space-y-4 text-foreground">
-                <p className="text-lg">
-                   Welcome to Forme Verdi — where watercolour artistry meets professional garden design, creating unique renderings that bring your landscape vision to life.
+                <p className="text-lg font-medium">
+                  Forme Verdi è il mio progetto di garden design.
                 </p>
                 <p>
-                  My philosophy is simple: gardens should be extensions of your home and personality, 
-                  creating harmonious spaces that connect you with nature while reflecting your unique style.
+                  Nasce dalla mia formazione nella progettazione territoriale e da una sensibilità verso il paesaggio coltivata fin dall'infanzia, tra giardini, stagioni e osservazione della natura.
                 </p>
                 <p>
-                  Drawing inspiration from both classical and contemporary design principles, 
-                  I work closely with clients to understand their vision, considering the site's natural attributes, 
-                  architectural context, and sustainability needs.
+                  Per me il giardino non è solo uno spazio esterno, ma un equilibrio vivo tra luogo, architettura e piante. Ogni progetto parte dall'ascolto attento del contesto e si sviluppa attraverso uno studio botanico accurato, con particolare attenzione al clima e alla sostenibilità.
                 </p>
                 <p>
-                  Whether you're dreaming of a peaceful sanctuary, a vibrant entertainment space, or a productive 
-                  kitchen garden, I bring creativity, technical expertise and a deep love for plants to every project.
+                  Unisco rigore tecnico e visione artistica: strumenti professionali, modellazione 3D e rappresentazione ad acquerello dialogano per dare forma a spazi verdi concreti e armoniosi.
                 </p>
-              </div>
-              
-              <div className="mt-8 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-10">
-                <div>
-                  <p className="text-3xl font-bold text-garden-dark-green">200+</p>
-                  <p className="text-sm text-garden-light-green uppercase tracking-wider">Projects Completed</p>
-                </div>
-                <div>
-                  <p className="text-3xl font-bold text-garden-dark-green">15+</p>
-                  <p className="text-sm text-garden-light-green uppercase tracking-wider">Years Experience</p>
-                </div>
-                <div>
-                  <p className="text-3xl font-bold text-garden-dark-green">26</p>
-                  <p className="text-sm text-garden-light-green uppercase tracking-wider">Design Awards</p>
-                </div>
+                <p>
+                  Progetto giardini destinati a durare nel tempo, che richiedano una manutenzione consapevole e restituiscano benessere a chi li vive.
+                </p>
               </div>
             </div>
           </div>
