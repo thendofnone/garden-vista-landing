@@ -11,9 +11,8 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full bg-garden-cream/95 backdrop-blur-sm z-50 shadow-sm">
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex justify-between items-center h-20">
-          <a href="#" className="flex items-center gap-2">
-            <img src={logo} alt="Forme Verdi logo" className="h-16 w-auto" />
-            <span className="text-garden-dark-green text-2xl font-sans font-semibold tracking-wide">Forme Verdi</span>
+          <a href="#" className="flex items-center">
+            <img src={logo} alt="Forme Verdi" className="h-16 w-auto" />
           </a>
 
           {/* Desktop menu */}
