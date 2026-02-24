@@ -63,9 +63,9 @@ export default {
     				border: 'hsl(var(--sidebar-border))',
     				ring: 'hsl(var(--sidebar-ring))'
     			},
-    			garden: {
-    				'dark-green': '#2C5530',
-    				'light-green': '#8FB68F',
+			garden: {
+    				'dark-green': '#43594d',
+    				'light-green': '#abbdb1',
     				earth: '#A67C52',
     				stone: '#D7D1C8',
     				cream: '#F8F5F0',
