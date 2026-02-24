@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex justify-between items-center h-20">
           <a href="#" className="flex items-center">
-            <img src={logo} alt="Forme Verdi" style={{ height: '72px', width: 'auto' }} />
+            <img src={logo} alt="Forme Verdi" style={{ height: '76px', width: 'auto' }} />
           </a>
 
           {/* Desktop menu */}
