@@ -32,10 +32,10 @@ const Navbar = () => {
 
           {/* Desktop menu */}
           <div className="hidden md:flex space-x-8">
-            <NavLink href="#about">About</NavLink>
-            <NavLink href="#projects">Projects</NavLink>
-            <NavLink href="#instagram">Gallery</NavLink>
-            <NavLink href="#contact">Contact</NavLink>
+            <NavLink href="#about">Magdalena</NavLink>
+            <NavLink href="#projects">Metodo</NavLink>
+            <NavLink href="#instagram">Progetti</NavLink>
+            <NavLink href="#contact">Contatti</NavLink>
           </div>
 
           {/* Mobile menu button */}
@@ -58,10 +58,10 @@ const Navbar = () => {
         )}
       >
         <div className="flex flex-col items-center space-y-8 p-8">
-          <MobileNavLink href="#about" onClick={() => setIsOpen(false)}>About</MobileNavLink>
-          <MobileNavLink href="#projects" onClick={() => setIsOpen(false)}>Projects</MobileNavLink>
-          <MobileNavLink href="#instagram" onClick={() => setIsOpen(false)}>Gallery</MobileNavLink>
-          <MobileNavLink href="#contact" onClick={() => setIsOpen(false)}>Contact</MobileNavLink>
+          <MobileNavLink href="#about" onClick={() => setIsOpen(false)}>Magdalena</MobileNavLink>
+          <MobileNavLink href="#projects" onClick={() => setIsOpen(false)}>Metodo</MobileNavLink>
+          <MobileNavLink href="#instagram" onClick={() => setIsOpen(false)}>Progetti</MobileNavLink>
+          <MobileNavLink href="#contact" onClick={() => setIsOpen(false)}>Contatti</MobileNavLink>
         </div>
       </div>
     </nav>
