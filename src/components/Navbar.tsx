@@ -24,7 +24,7 @@ const Navbar = () => {
           : "bg-transparent -translate-y-full"
       )}
     >
-      <div className="container mx-auto px-4 md:px-8">
+      <div className="px-6 md:px-12 lg:px-20">
         <div className="flex justify-between items-center h-20">
           <a href="#" className="flex items-center">
             <img src={logo} alt="Forme Verdi" style={{ height: '76px', width: 'auto' }} />
