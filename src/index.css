@@ -179,15 +179,20 @@
 @keyframes hero-rise {
   0% {
     opacity: 0;
-    transform: translateY(60px);
+    transform: translateY(80px) scale(0.97);
+    filter: blur(4px);
+  }
+  60% {
+    filter: blur(0px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
+    filter: blur(0px);
   }
 }
 
 .hero-text-rise {
   opacity: 0;
-  animation: hero-rise 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: hero-rise 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }

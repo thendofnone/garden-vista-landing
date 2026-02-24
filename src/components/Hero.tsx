@@ -67,19 +67,19 @@ const Hero = () => {
         className="relative z-10 h-full px-6 md:px-12 lg:px-20 flex flex-col items-start justify-end pb-28 md:pb-32 lg:pb-36"
         style={{ transform: `translateY(${scrollY * -0.2}px)` }}>
 
-        <h1 className="text-4xl md:text-6xl lg:text-7xl text-white mb-4 md:mb-6 hero-text-rise drop-shadow-[0_4px_24px_rgba(0,0,0,0.5)] font-medium font-sans leading-tight">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl text-white mb-4 md:mb-6 hero-text-rise drop-shadow-[0_4px_24px_rgba(0,0,0,0.5)] font-medium font-sans leading-[1.1]">
           Forme Verdi
         </h1>
-        <p className="text-xl md:text-2xl lg:text-3xl text-garden-accent mb-6 md:mb-8 hero-text-rise drop-shadow-[0_2px_12px_rgba(229,184,110,0.4)] font-medium" style={{ animationDelay: "0.15s" }}>
+        <p className="text-2xl md:text-3xl lg:text-4xl text-garden-accent mb-6 md:mb-8 hero-text-rise drop-shadow-[0_2px_12px_rgba(229,184,110,0.4)] font-medium" style={{ animationDelay: "0.2s" }}>
           Progetto l'equilibrio tra spazio e natura
         </p>
-        <p className="text-base md:text-lg text-white/85 max-w-xl mb-10 md:mb-12 hero-text-rise drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]" style={{ animationDelay: "0.3s" }}>
+        <p className="text-lg md:text-xl text-white/85 max-w-xl mb-10 md:mb-12 hero-text-rise drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]" style={{ animationDelay: "0.4s" }}>
           Ogni giardino nasce dall'equilibrio tra spazio, natura e clima. Disegno ambienti verdi vivibili e destinati a durare.
         </p>
         <a
           href="#contact"
           className="bg-garden-dark-green text-white px-8 py-4 rounded-md hover:bg-garden-light-green transition-colors duration-300 font-medium tracking-wide hero-text-rise drop-shadow-[0_4px_16px_rgba(0,0,0,0.3)]"
-          style={{ animationDelay: "0.5s" }}>
+          style={{ animationDelay: "0.6s" }}>
           Contattami per una consulenza
         </a>
       </div>
