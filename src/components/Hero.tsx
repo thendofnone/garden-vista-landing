@@ -44,9 +44,9 @@ const Hero = () => {
           style={{ transform: `translateY(${scrollY * 0.4}px) scale(1.1)` }} />
 
         )}
-        <div className="absolute inset-0 bg-black/40" />
-        {/* Vignette overlay */}
-        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.45) 100%)' }} />
+        <div className="absolute inset-0 bg-black/30" />
+        {/* Vignette overlay — solo bordi */}
+        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at center, transparent 60%, rgba(0,0,0,0.5) 100%)' }} />
       </div>
 
       {/* Carousel indicators */}
