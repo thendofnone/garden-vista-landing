@@ -42,6 +42,8 @@ const Hero = () => {
 
         )}
         <div className="absolute inset-0 bg-black/40" />
+        {/* Vignette overlay */}
+        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.45) 100%)' }} />
       </div>
 
       {/* Carousel indicators */}
@@ -60,22 +62,24 @@ const Hero = () => {
       </div>
 
       {/* Content with inverse parallax */}
+      {/* Content */}
       <div
-        className="relative z-10 h-full text-center px-4 flex-col flex items-start justify-end py-[100px]"
+        className="relative z-10 h-full px-6 md:px-12 lg:px-20 flex flex-col items-start justify-end pb-28 md:pb-32 lg:pb-36"
         style={{ transform: `translateY(${scrollY * -0.2}px)` }}>
 
-        <h1 className="text-4xl lg:text-7xl text-white mb-6 hero-text-rise drop-shadow-[0_4px_24px_rgba(0,0,0,0.5)] font-medium font-sans text-justify md:text-6xl">
-          Forme Verdi <br className="hidden md:block" />
-          <span className="text-garden-accent drop-shadow-[0_2px_12px_rgba(229,184,110,0.4)]">Progetto l'equilibrio tra spazio e natura</span>
+        <h1 className="text-4xl md:text-6xl lg:text-7xl text-white mb-4 md:mb-6 hero-text-rise drop-shadow-[0_4px_24px_rgba(0,0,0,0.5)] font-medium font-sans leading-tight">
+          Forme Verdi
         </h1>
-        <p className="text-xl md:text-2xl text-white/90 max-w-2xl mb-10 hero-text-rise drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)] text-left" style={{ animationDelay: "0.3s" }}>
-          Ogni giardino nasce dall'equilibrio tra spazio, natura e clima. Disegno ambienti verdi vivibili e destinati a durare
+        <p className="text-xl md:text-2xl lg:text-3xl text-garden-accent mb-6 md:mb-8 hero-text-rise drop-shadow-[0_2px_12px_rgba(229,184,110,0.4)] font-medium" style={{ animationDelay: "0.15s" }}>
+          Progetto l'equilibrio tra spazio e natura
+        </p>
+        <p className="text-base md:text-lg text-white/85 max-w-xl mb-10 md:mb-12 hero-text-rise drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]" style={{ animationDelay: "0.3s" }}>
+          Ogni giardino nasce dall'equilibrio tra spazio, natura e clima. Disegno ambienti verdi vivibili e destinati a durare.
         </p>
         <a
           href="#contact"
-          className="bg-garden-dark-green text-white px-8 py-4 rounded-md hover:bg-garden-light-green transition-colors duration-300 font-medium tracking-wide hero-text-rise drop-shadow-[0_4px_16px_rgba(0,0,0,0.3)] text-center"
-          style={{ animationDelay: "0.6s" }}>
-
+          className="bg-garden-dark-green text-white px-8 py-4 rounded-md hover:bg-garden-light-green transition-colors duration-300 font-medium tracking-wide hero-text-rise drop-shadow-[0_4px_16px_rgba(0,0,0,0.3)]"
+          style={{ animationDelay: "0.5s" }}>
           Contattami per una consulenza
         </a>
       </div>
