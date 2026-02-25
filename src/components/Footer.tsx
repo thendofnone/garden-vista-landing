@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-6">Forme Verdi</h3>
             <p className="text-white/80 mb-6 max-w-xs">
-              Creating harmonious outdoor spaces that inspire, rejuvenate, and connect people with nature.
+              Ogni giardino nasce dall'equilibrio tra spazio, natura e clima. Disegno ambienti verdi vivibili e destinati a durare.
             </p>
             <div className="flex space-x-4">
               <a 
