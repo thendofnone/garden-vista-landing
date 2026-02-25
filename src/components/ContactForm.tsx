@@ -219,11 +219,6 @@ const ContactForm = () => {
                 <Instagram className="text-garden-accent mr-4 flex-shrink-0" size={20} />
                 <a href="https://instagram.com/formeverdi" target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-garden-dark-green transition-colors">@formeverdi</a>
               </div>
-
-              <div className="pt-4 border-t border-garden-stone/30 flex items-center">
-                <span className="text-garden-accent mr-4 text-sm font-medium w-[20px] text-center flex-shrink-0">P.</span>
-                <span className="text-foreground/60 text-sm">IVA 123456789121</span>
-              </div>
             </div>
           </div>
         </div>
