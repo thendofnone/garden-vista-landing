@@ -16,13 +16,13 @@ const Index = () => {
       <Navbar />
       <Hero />
       <About />
-      <BotanicalDivider className="bg-gradient-to-b from-garden-cream to-white" />
+      <BotanicalDivider />
       <Method />
-      <BotanicalDivider className="bg-gradient-to-b from-white to-garden-cream" />
+      <BotanicalDivider />
       <Projects />
-      <BotanicalDivider className="bg-gradient-to-b from-garden-cream to-white" />
+      <BotanicalDivider />
       <InstagramFeed />
-      <BotanicalDivider className="bg-gradient-to-b from-white to-garden-cream" />
+      <BotanicalDivider />
       <ContactForm />
       <Footer />
     </div>

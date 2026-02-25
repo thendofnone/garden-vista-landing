@@ -8,33 +8,33 @@ const BotanicalDivider = ({ className = '' }: BotanicalDividerProps) => {
   return (
     <div className={`flex items-center justify-center py-10 md:py-14 ${className}`} aria-hidden="true">
       <svg
-        viewBox="0 0 400 40"
-        className="w-[280px] md:w-[360px] h-auto"
+        viewBox="0 0 400 50"
+        className="w-[300px] md:w-[400px] h-auto"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         {/* Left line */}
-        <line x1="0" y1="20" x2="150" y2="20" stroke="#abbdb1" strokeWidth="1" opacity="0.4" />
+        <line x1="0" y1="25" x2="145" y2="25" stroke="#abbdb1" strokeWidth="1" opacity="0.5" />
         
         {/* Central leaf motif */}
-        <g transform="translate(200, 20)" opacity="0.5">
+        <g transform="translate(200, 25)" opacity="0.65">
           {/* Stem */}
-          <line x1="-50" y1="0" x2="50" y2="0" stroke="#abbdb1" strokeWidth="1" />
+          <line x1="-55" y1="0" x2="55" y2="0" stroke="#abbdb1" strokeWidth="1" />
           
           {/* Left leaves */}
-          <path d="M-20,-1 Q-28,-12 -18,-14 Q-14,-6 -12,-1" fill="#abbdb1" opacity="0.6" />
-          <path d="M-10,-1 Q-16,-10 -8,-12 Q-5,-5 -4,-1" fill="#abbdb1" opacity="0.5" />
+          <path d="M-30,-2 Q-42,-18 -28,-21 Q-22,-10 -18,-2" fill="#abbdb1" opacity="0.7" />
+          <path d="M-14,-2 Q-23,-15 -12,-17 Q-8,-8 -6,-2" fill="#abbdb1" opacity="0.6" />
           
           {/* Center leaf (upward) */}
-          <path d="M-2,-1 Q0,-16 2,-1" fill="#E5B86E" opacity="0.5" />
+          <path d="M-3,-2 Q0,-22 3,-2" fill="#E5B86E" opacity="0.6" />
           
           {/* Right leaves */}
-          <path d="M10,-1 Q16,-10 8,-12 Q5,-5 4,-1" fill="#abbdb1" opacity="0.5" />
-          <path d="M20,-1 Q28,-12 18,-14 Q14,-6 12,-1" fill="#abbdb1" opacity="0.6" />
+          <path d="M14,-2 Q23,-15 12,-17 Q8,-8 6,-2" fill="#abbdb1" opacity="0.6" />
+          <path d="M30,-2 Q42,-18 28,-21 Q22,-10 18,-2" fill="#abbdb1" opacity="0.7" />
         </g>
 
         {/* Right line */}
-        <line x1="250" y1="20" x2="400" y2="20" stroke="#abbdb1" strokeWidth="1" opacity="0.4" />
+        <line x1="255" y1="25" x2="400" y2="25" stroke="#abbdb1" strokeWidth="1" opacity="0.5" />
       </svg>
     </div>
   );
