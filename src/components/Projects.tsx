@@ -60,7 +60,7 @@ const Projects = () => {
             href="#contact" 
             className="inline-block border-2 border-garden-dark-green text-garden-dark-green px-8 py-3 rounded-md hover:bg-garden-dark-green hover:text-white transition-colors duration-300 font-medium"
           >
-            Start Your Project
+            Progettiamo il tuo giardino
           </a>
         </div>
       </div>
