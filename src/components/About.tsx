@@ -70,7 +70,7 @@ const About = () => {
 
         {/* Blocco semantico SEO */}
         <div
-          className="mt-20 max-w-3xl mx-auto text-center"
+          className="mt-20 max-w-3xl mx-auto"
           style={{
             opacity: isVisible ? 1 : 0,
             transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
