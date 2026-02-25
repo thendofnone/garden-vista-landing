@@ -30,7 +30,7 @@ const About = () => {
               <img
                 ref={imgRef}
                 src={aboutImg}
-                alt="Garden Designer Portrait"
+                alt="Magdalena Szczepanska, garden designer di Forme Verdi"
                 className="shadow-xl w-full will-change-transform scale-110"
               />
               <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-garden-accent rounded-full hidden md:block"></div>

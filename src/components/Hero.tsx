@@ -33,7 +33,7 @@ const Hero = () => {
         <img
           key={src}
           src={src}
-          alt={`Garden design ${index + 1}`}
+          alt={`Progetto di garden design Forme Verdi – esempio ${index + 1}`}
           className={cn(
             "absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out",
             index === currentIndex ? "opacity-100" : "opacity-0"
