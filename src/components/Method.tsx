@@ -4,21 +4,21 @@ import React, { useEffect, useRef, useState } from 'react';
 const steps = [
   {
     number: '01',
-    title: 'Ascolto e analisi',
+    title: 'Ascolto',
     description:
-      'Studio il luogo, il clima, il suolo e la relazione con l\'architettura. Comprendere lo spazio è il primo passo per costruire un giardino coerente.',
+      'Osservo luce, proporzioni e relazioni con l\'architettura.\nOgni spazio ha un\'identità da riconoscere prima di intervenire.',
   },
   {
     number: '02',
-    title: 'Progettazione',
+    title: 'Progetto',
     description:
-      'Definisco il concept, le scelte botaniche e l\'organizzazione degli spazi attraverso strumenti professionali. Seleziono specie adatte al contesto, privilegiando stabilità, biodiversità e manutenzione consapevole.',
+      'Definisco struttura e scelte botaniche in relazione al clima e all\'uso dello spazio.\nOgni elemento è pensato per stabilità e continuità nel tempo.',
   },
   {
     number: '03',
-    title: 'Realizzazione e durata',
+    title: 'Evoluzione',
     description:
-      'Il progetto viene tradotto in indicazioni precise per la messa a dimora e la gestione futura, per garantire qualità, equilibrio e continuità nel tempo.',
+      'Il giardino cresce e cambia.\nProgetto perché possa maturare in modo naturale e mantenere equilibrio nel tempo.',
   },
 ];
 
@@ -54,10 +54,10 @@ const Method = () => {
           }}
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium text-garden-dark-green mb-4 leading-tight">
-            Il mio metodo
+            Il mio <span className="text-garden-accent">metodo</span>
           </h2>
           <p className="text-lg md:text-xl text-secondary max-w-xl">
-            Ogni progetto segue un processo chiaro e strutturato.
+            Il mio metodo nasce dall'ascolto del luogo e dal rispetto del suo carattere.
           </p>
         </div>
 
@@ -79,7 +79,7 @@ const Method = () => {
               <h3 className="text-xl md:text-2xl font-medium text-garden-dark-green mb-3">
                 {step.title}
               </h3>
-              <p className="text-base md:text-lg text-secondary leading-relaxed">
+              <p className="text-base md:text-lg text-secondary leading-relaxed whitespace-pre-line">
                 {step.description}
               </p>
             </div>
