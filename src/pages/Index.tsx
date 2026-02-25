@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
-import BotanicalDivider from '@/components/BotanicalDivider';
+import WaveDivider from '@/components/WaveDivider';
 import Method from '@/components/Method';
 import Projects from '@/components/Projects';
 import InstagramFeed from '@/components/InstagramFeed';
@@ -16,13 +16,13 @@ const Index = () => {
       <Navbar />
       <Hero />
       <About />
-      <BotanicalDivider />
+      <WaveDivider fromColor="#F8F5F0" toColor="#ffffff" />
       <Method />
-      <BotanicalDivider />
+      <WaveDivider fromColor="#ffffff" toColor="#F8F5F0" />
       <Projects />
-      <BotanicalDivider />
+      <WaveDivider fromColor="#F8F5F0" toColor="#ffffff" />
       <InstagramFeed />
-      <BotanicalDivider />
+      <WaveDivider fromColor="#ffffff" toColor="#F8F5F0" />
       <ContactForm />
       <Footer />
     </div>
