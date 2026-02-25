@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, Instagram } from 'lucide-react';
 import { useScrollReveal } from '@/hooks/use-parallax';
 
 const ContactForm = () => {
@@ -204,25 +204,25 @@ const ContactForm = () => {
           <div className="bg-garden-cream rounded-lg p-8">
             <h3 className="text-xl font-semibold mb-6 text-garden-dark-green">Contatti</h3>
             
-            <div className="space-y-6">
-              <div className="flex items-start">
-                <Mail className="text-garden-accent mr-4 mt-1" size={20} />
-                <div>
-                  <h4 className="font-medium text-garden-dark-green">Email</h4>
-                  <a href="mailto:magdalena@formeverdi.it" className="text-foreground/80 hover:text-garden-dark-green transition-colors">magdalena@formeverdi.it</a>
-                </div>
+            <div className="space-y-5">
+              <div className="flex items-center">
+                <Mail className="text-garden-accent mr-4 flex-shrink-0" size={20} />
+                <a href="mailto:magdalena@formeverdi.it" className="text-foreground/80 hover:text-garden-dark-green transition-colors">magdalena@formeverdi.it</a>
               </div>
               
-              <div className="flex items-start">
-                <Phone className="text-garden-accent mr-4 mt-1" size={20} />
-                <div>
-                  <h4 className="font-medium text-garden-dark-green">Telefono</h4>
-                  <a href="tel:+393398046472" className="text-foreground/80 hover:text-garden-dark-green transition-colors">+39 339 804 6472</a>
-                </div>
+              <div className="flex items-center">
+                <Phone className="text-garden-accent mr-4 flex-shrink-0" size={20} />
+                <a href="tel:+393398046472" className="text-foreground/80 hover:text-garden-dark-green transition-colors">+39 339 804 6472</a>
               </div>
 
-              <div className="pt-4 border-t border-garden-stone/30">
-                <p className="text-sm text-foreground/60">P.IVA 123456789121</p>
+              <div className="flex items-center">
+                <Instagram className="text-garden-accent mr-4 flex-shrink-0" size={20} />
+                <a href="https://instagram.com/formeverdi" target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-garden-dark-green transition-colors">@formeverdi</a>
+              </div>
+
+              <div className="pt-4 border-t border-garden-stone/30 flex items-center">
+                <span className="text-garden-accent mr-4 text-sm font-medium w-[20px] text-center flex-shrink-0">P.</span>
+                <span className="text-foreground/60 text-sm">IVA 123456789121</span>
               </div>
             </div>
           </div>
