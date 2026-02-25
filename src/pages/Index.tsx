@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
+import WaveDivider from '@/components/WaveDivider';
 import Method from '@/components/Method';
 import Projects from '@/components/Projects';
 import InstagramFeed from '@/components/InstagramFeed';
@@ -15,6 +16,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <About />
+      <WaveDivider fromColor="#F8F5F0" toColor="#ffffff" />
       <Method />
       <Projects />
       <InstagramFeed />

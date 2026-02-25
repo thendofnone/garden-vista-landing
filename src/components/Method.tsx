@@ -41,7 +41,7 @@ const Method = () => {
     <section
       ref={sectionRef}
       id="metodo"
-      className="section-padding bg-garden-cream"
+      className="section-padding bg-white"
     >
       <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
         {/* Header */}
