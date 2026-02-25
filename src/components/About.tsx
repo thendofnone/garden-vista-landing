@@ -46,12 +46,12 @@ const About = () => {
               transition: 'opacity 1.4s ease-out 0.3s, transform 1.4s ease-out 0.3s',
             }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-3 text-garden-dark-green">Sono <span className="text-garden-accent">Magdalena Szczepanska</span>.</h2>
-            <p className="text-lg font-medium text-foreground/80 mb-6">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-3 text-garden-dark-green leading-tight">Sono <span className="text-garden-accent">Magdalena Szczepanska</span>.</h2>
+            <p className="text-lg md:text-xl font-medium text-foreground/80 mb-6">
               Forme Verdi è il mio progetto di garden design.
             </p>
 
-            <div className="space-y-4 text-foreground">
+            <div className="space-y-4 text-foreground text-lg md:text-xl leading-relaxed">
               <p>
                 Nasce dalla mia formazione nella progettazione territoriale e da una sensibilità verso il paesaggio coltivata fin dall'infanzia, tra giardini, stagioni e osservazione della natura.
               </p>
