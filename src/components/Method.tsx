@@ -50,7 +50,7 @@ const Method = () => {
           style={{
             opacity: isVisible ? 1 : 0,
             transform: isVisible ? 'translateY(0)' : 'translateY(40px)',
-            transition: 'opacity 0.8s ease-out, transform 0.8s ease-out',
+            transition: 'opacity 1.4s ease-out, transform 1.4s ease-out',
           }}
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium text-garden-dark-green mb-4 leading-tight">
@@ -70,7 +70,7 @@ const Method = () => {
               style={{
                 opacity: isVisible ? 1 : 0,
                 transform: isVisible ? 'translateY(0)' : 'translateY(50px)',
-                transition: `opacity 0.8s ease-out ${0.2 + i * 0.15}s, transform 0.8s ease-out ${0.2 + i * 0.15}s`,
+                transition: `opacity 1.4s ease-out ${0.2 + i * 0.2}s, transform 1.4s ease-out ${0.2 + i * 0.2}s`,
               }}
             >
               <span className="block text-5xl md:text-6xl font-light text-garden-light-green mb-4 font-mono">

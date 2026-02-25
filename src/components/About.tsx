@@ -24,7 +24,7 @@ const About = () => {
               style={{
                 opacity: isVisible ? 1 : 0,
                 transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
-                transition: 'opacity 0.8s ease-out, transform 0.8s ease-out',
+                transition: 'opacity 1.4s ease-out, transform 1.4s ease-out',
               }}
             >
               <img
@@ -43,7 +43,7 @@ const About = () => {
             style={{
               opacity: isVisible ? 1 : 0,
               transform: isVisible ? 'translateY(0)' : 'translateY(50px)',
-              transition: 'opacity 0.8s ease-out 0.3s, transform 0.8s ease-out 0.3s',
+              transition: 'opacity 1.4s ease-out 0.3s, transform 1.4s ease-out 0.3s',
             }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-3 text-garden-dark-green">Sono <span className="text-garden-accent">Magdalena Szczepanska</span>.</h2>
@@ -74,7 +74,7 @@ const About = () => {
           style={{
             opacity: isVisible ? 1 : 0,
             transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
-            transition: 'opacity 0.8s ease-out 0.6s, transform 0.8s ease-out 0.6s',
+            transition: 'opacity 1.4s ease-out 0.6s, transform 1.4s ease-out 0.6s',
           }}
         >
           <p className="text-lg md:text-xl text-foreground/85 leading-relaxed">
