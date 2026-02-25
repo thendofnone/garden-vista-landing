@@ -6,7 +6,7 @@ interface BotanicalDividerProps {
 
 const BotanicalDivider = ({ className = '' }: BotanicalDividerProps) => {
   return (
-    <div className={`flex items-center justify-center py-4 md:py-6 -my-px ${className}`} aria-hidden="true">
+    <div className={`flex items-center justify-center -mt-8 md:-mt-12 -mb-8 md:-mb-12 relative z-10 ${className}`} aria-hidden="true">
       <svg
         viewBox="0 0 400 50"
         className="w-[300px] md:w-[400px] h-auto"
