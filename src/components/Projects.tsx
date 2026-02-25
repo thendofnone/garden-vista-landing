@@ -38,7 +38,7 @@ const Projects = () => {
   const { ref: revealRef, isVisible } = useScrollReveal();
 
   return (
-    <section id="projects" className="section-padding bg-white">
+    <section id="projects" className="section-padding bg-garden-cream">
       <div className="container mx-auto max-w-6xl">
         <div ref={revealRef} className={`scroll-reveal ${isVisible ? 'visible' : ''}`}>
           <div className="text-center mb-16">
