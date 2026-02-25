@@ -44,7 +44,7 @@ const Projects = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-garden-dark-green">I miei <span className="text-garden-accent">progetti</span></h2>
             <p className="text-lg max-w-3xl mx-auto text-foreground/80">
-              Explore a selection of our transformative garden designs, each tailored to our clients' unique visions and spaces
+              Ogni giardino è una relazione tra spazio, natura e persone.
             </p>
           </div>
         </div>
