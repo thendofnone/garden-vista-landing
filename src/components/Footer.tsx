@@ -42,8 +42,8 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-6">Quick Links</h3>
             <nav className="flex flex-col space-y-3">
               <a href="#about" className="text-white/80 hover:text-garden-accent transition-colors">Magdalena</a>
-              <a href="#projects" className="text-white/80 hover:text-garden-accent transition-colors">Metodo</a>
-              <a href="#instagram" className="text-white/80 hover:text-garden-accent transition-colors">Progetti</a>
+              <a href="#metodo" className="text-white/80 hover:text-garden-accent transition-colors">Metodo</a>
+              <a href="#projects" className="text-white/80 hover:text-garden-accent transition-colors">Progetti</a>
               <a href="#contact" className="text-white/80 hover:text-garden-accent transition-colors">Contatti</a>
             </nav>
           </div>

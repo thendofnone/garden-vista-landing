@@ -89,7 +89,7 @@ const ContactForm = () => {
       <div className="container mx-auto max-w-6xl" ref={revealRef}>
         <div className={`scroll-reveal ${isVisible ? 'visible' : ''}`}>
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-garden-dark-green">Get In <span className="text-garden-accent">Touch</span></h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-garden-dark-green">Parliamo del tuo <span className="text-garden-accent">giardino</span></h2>
           <p className="text-lg max-w-3xl mx-auto text-foreground/80">
             Ready to transform your outdoor space? Contact us to discuss your vision and schedule a consultation
           </p>
