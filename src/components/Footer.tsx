@@ -44,6 +44,7 @@ const Footer = () => {
               <a href="#about" className="text-white/80 hover:text-garden-accent transition-colors">Magdalena</a>
               <a href="#metodo" className="text-white/80 hover:text-garden-accent transition-colors">Metodo</a>
               <a href="#projects" className="text-white/80 hover:text-garden-accent transition-colors">Progetti</a>
+              <a href="#instagram" className="text-white/80 hover:text-garden-accent transition-colors">Instagram</a>
               <a href="#contact" className="text-white/80 hover:text-garden-accent transition-colors">Contatti</a>
             </nav>
           </div>
