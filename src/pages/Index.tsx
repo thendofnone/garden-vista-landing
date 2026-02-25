@@ -18,6 +18,7 @@ const Index = () => {
       <About />
       <WaveDivider fromColor="#F8F5F0" toColor="#ffffff" />
       <Method />
+      <WaveDivider fromColor="#ffffff" toColor="#F8F5F0" />
       <Projects />
       <InstagramFeed />
       <ContactForm />
