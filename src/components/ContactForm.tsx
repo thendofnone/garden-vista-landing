@@ -85,7 +85,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="section-padding bg-white overflow-hidden">
+    <section id="contact" className="section-padding bg-garden-cream overflow-hidden">
       <div className="container mx-auto max-w-6xl" ref={revealRef}>
         <div className={`scroll-reveal ${isVisible ? 'visible' : ''}`}>
         <div className="text-center mb-16">
