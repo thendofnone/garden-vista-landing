@@ -22,6 +22,7 @@ const Index = () => {
       <Projects />
       <WaveDivider fromColor="#F8F5F0" toColor="#ffffff" />
       <InstagramFeed />
+      <WaveDivider fromColor="#ffffff" toColor="#F8F5F0" />
       <ContactForm />
       <Footer />
     </div>
