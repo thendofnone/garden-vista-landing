@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
-import WaveDivider from '@/components/WaveDivider';
+import BotanicalDivider from '@/components/BotanicalDivider';
 import Method from '@/components/Method';
 import Projects from '@/components/Projects';
 import InstagramFeed from '@/components/InstagramFeed';
@@ -16,13 +16,13 @@ const Index = () => {
       <Navbar />
       <Hero />
       <About />
-      <WaveDivider fromColor="#F8F5F0" toColor="#ffffff" />
+      <BotanicalDivider className="bg-gradient-to-b from-garden-cream to-white" />
       <Method />
-      <WaveDivider fromColor="#ffffff" toColor="#F8F5F0" />
+      <BotanicalDivider className="bg-gradient-to-b from-white to-garden-cream" />
       <Projects />
-      <WaveDivider fromColor="#F8F5F0" toColor="#ffffff" />
+      <BotanicalDivider className="bg-gradient-to-b from-garden-cream to-white" />
       <InstagramFeed />
-      <WaveDivider fromColor="#ffffff" toColor="#F8F5F0" />
+      <BotanicalDivider className="bg-gradient-to-b from-white to-garden-cream" />
       <ContactForm />
       <Footer />
     </div>
