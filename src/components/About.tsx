@@ -67,6 +67,21 @@ const About = () => {
             </div>
           </div>
         </div>
+
+        {/* Blocco semantico SEO */}
+        <div
+          className="mt-12 max-w-3xl mx-auto text-center"
+          style={{
+            opacity: isVisible ? 1 : 0,
+            transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
+            transition: 'opacity 0.8s ease-out 0.6s, transform 0.8s ease-out 0.6s',
+          }}
+        >
+          <p className="text-lg md:text-xl text-foreground/85 leading-relaxed">
+            Sono una garden designer con base in Veneto e mi occupo di progettazione di giardini per abitazioni private.
+            Lavoro principalmente tra Verona, Vicenza e Padova, sviluppando progetti su misura, con attenzione al clima locale, alla scelta botanica e alla durata nel tempo.
+          </p>
+        </div>
       </div>
     </section>
   );
