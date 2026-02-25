@@ -5,10 +5,7 @@ import heroImg1 from '@/assets/formeverdi-01.png';
 import heroImg2 from '@/assets/formeverdi-02.png';
 import heroImg3 from '@/assets/formeverdi-03.png';
 
-// White test image to evaluate vignette effect
-const whiteTestImg = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080"><rect fill="white" width="1920" height="1080"/></svg>');
-
-const heroImages = [whiteTestImg, heroImg1, heroImg2, heroImg3];
+const heroImages = [heroImg1, heroImg2, heroImg3];
 
 
 const Hero = () => {
