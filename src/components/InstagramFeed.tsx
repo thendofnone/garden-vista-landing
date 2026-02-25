@@ -42,12 +42,12 @@ const InstagramFeed = () => {
   }, []);
 
   return (
-    <section id="instagram" className="section-padding bg-garden-cream overflow-hidden">
+    <section id="instagram" className="section-padding bg-white overflow-hidden">
       <div className="container mx-auto max-w-6xl" ref={revealRef}>
         <div className={`scroll-reveal ${isVisible ? 'visible' : ''}`}>
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-2 text-garden-dark-green">Nel <span className="text-garden-accent">tempo</span></h2>
-          <p className="text-lg mb-4">Discover more inspiration on our Instagram</p>
+          <p className="text-lg mb-4">Il progetto continua oltre la realizzazione.</p>
           <a 
             href="https://instagram.com/formeverdi" 
             target="_blank" 
@@ -143,7 +143,7 @@ const InstagramFeed = () => {
             rel="noopener noreferrer"
             className="inline-block px-6 py-3 bg-garden-dark-green text-white rounded-lg hover:bg-garden-light-green transition-colors duration-300"
           >
-            View More on Instagram
+            Continua su Instagram
           </a>
         </div>
         </div>
