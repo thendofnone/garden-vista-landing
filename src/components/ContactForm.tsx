@@ -209,7 +209,7 @@ const ContactForm = () => {
                 <Mail className="text-garden-accent mr-4 mt-1" size={20} />
                 <div>
                   <h4 className="font-medium text-garden-dark-green">Email</h4>
-                  <a href="mailto:hello@greenessence.com" className="text-foreground/80 hover:text-garden-dark-green transition-colors">hello@greenessence.com</a>
+                  <a href="mailto:magdalena@formeverdi.it" className="text-foreground/80 hover:text-garden-dark-green transition-colors">magdalena@formeverdi.it</a>
                 </div>
               </div>
               
@@ -217,19 +217,12 @@ const ContactForm = () => {
                 <Phone className="text-garden-accent mr-4 mt-1" size={20} />
                 <div>
                   <h4 className="font-medium text-garden-dark-green">Telefono</h4>
-                  <a href="tel:+15551234567" className="text-foreground/80 hover:text-garden-dark-green transition-colors">(555) 123-4567</a>
+                  <a href="tel:+393398046472" className="text-foreground/80 hover:text-garden-dark-green transition-colors">+39 339 804 6472</a>
                 </div>
               </div>
-              
-              <div className="flex items-start">
-                <MapPin className="text-garden-accent mr-4 mt-1" size={20} />
-                <div>
-                  <h4 className="font-medium text-garden-dark-green">Indirizzo</h4>
-                  <address className="not-italic text-foreground/80">
-                    123 Garden Way<br />
-                    Greenville, CA 90210
-                  </address>
-                </div>
+
+              <div className="pt-4 border-t border-garden-stone/30">
+                <p className="text-sm text-foreground/60">P.IVA 123456789121</p>
               </div>
             </div>
           </div>
