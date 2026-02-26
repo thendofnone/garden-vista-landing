@@ -43,7 +43,7 @@ const Method = () => {
       id="metodo"
       className="section-padding bg-white"
     >
-      <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
+      <div className="container mx-auto max-w-6xl">
         {/* Header */}
         <div
           className="mb-16 md:mb-20"
