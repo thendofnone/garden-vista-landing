@@ -56,7 +56,7 @@ const Method = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium text-garden-dark-green mb-4 leading-tight">
             Il mio <span className="text-garden-accent">metodo</span>
           </h2>
-          <p className="text-lg md:text-xl text-secondary max-w-xl">
+          <p className="text-lg md:text-xl text-secondary">
             Il mio metodo nasce dall'ascolto del luogo e dal rispetto del suo carattere.
           </p>
         </div>
