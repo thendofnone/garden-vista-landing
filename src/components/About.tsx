@@ -76,7 +76,7 @@ const About = () => {
             transition: 'opacity 1.4s ease-out 0.6s, transform 1.4s ease-out 0.6s'
           }}>
 
-          <p className="text-xl md:text-2xl font-light text-garden-dark-green leading-snug tracking-wide font-mono lg:text-2xl text-right">
+          <p className="text-xl md:text-2xl font-light text-garden-dark-green leading-snug tracking-wide font-mono lg:text-2xl text-center">
             Sono una garden designer con base in Veneto e mi occupo di progettazione di giardini per abitazioni private.
             Lavoro principalmente tra Verona, Vicenza e Padova, sviluppando progetti su misura, con attenzione al clima locale, alla scelta botanica e alla durata nel tempo.
           </p>
