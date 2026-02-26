@@ -94,7 +94,7 @@ const ContactForm = () => {
         <div className={`scroll-reveal ${isVisible ? 'visible' : ''}`}>
         <div className="mb-16 md:mb-20">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-4 text-garden-dark-green leading-tight">Parliamo del tuo <span className="text-garden-accent">giardino</span></h2>
-          <p className="text-lg md:text-xl text-secondary max-w-xl">
+          <p className="text-lg md:text-xl text-secondary">
             Ogni progetto inizia da una conversazione.<br />Raccontami il tuo spazio e le tue esigenze.
           </p>
         </div>

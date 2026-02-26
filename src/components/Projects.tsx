@@ -49,7 +49,7 @@ const Projects = () => {
           <div className="mb-16 md:mb-20">
             {/* TODO: Aggiornare titolo e sottotitolo sezione progetti */}
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-4 text-garden-dark-green leading-tight">I miei <span className="text-garden-accent">progetti</span></h2>
-            <p className="text-lg md:text-xl text-secondary max-w-xl">
+            <p className="text-lg md:text-xl text-secondary">
               Ogni giardino è una relazione tra spazio, natura e persone.
             </p>
           </div>
