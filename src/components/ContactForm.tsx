@@ -92,9 +92,9 @@ const ContactForm = () => {
     <section id="contact" className="section-padding bg-garden-cream overflow-hidden">
       <div className="container mx-auto max-w-6xl" ref={revealRef}>
         <div className={`scroll-reveal ${isVisible ? 'visible' : ''}`}>
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-garden-dark-green">Parliamo del tuo <span className="text-garden-accent">giardino</span></h2>
-          <p className="text-lg max-w-3xl mx-auto text-foreground/80">
+        <div className="mb-16 md:mb-20">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-4 text-garden-dark-green leading-tight">Parliamo del tuo <span className="text-garden-accent">giardino</span></h2>
+          <p className="text-lg md:text-xl text-secondary max-w-xl">
             Ogni progetto inizia da una conversazione.<br />Raccontami il tuo spazio e le tue esigenze.
           </p>
         </div>
