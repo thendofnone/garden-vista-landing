@@ -23,15 +23,15 @@ const About = () => {
               style={{
                 opacity: isVisible ? 1 : 0,
                 transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
-                transition: 'opacity 1.4s ease-out, transform 1.4s ease-out',
-              }}
-            >
+                transition: 'opacity 1.4s ease-out, transform 1.4s ease-out'
+              }}>
+
               <img
                 ref={imgRef}
                 src={aboutImg}
                 alt="Magdalena Szczepanska, garden designer di Forme Verdi"
-                className="shadow-xl w-full will-change-transform scale-110"
-              />
+                className="shadow-xl w-full will-change-transform scale-110" />
+
               <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-garden-accent rounded-full hidden md:block"></div>
             </div>
           </div>
@@ -42,9 +42,9 @@ const About = () => {
             style={{
               opacity: isVisible ? 1 : 0,
               transform: isVisible ? 'translateY(0)' : 'translateY(50px)',
-              transition: 'opacity 1.4s ease-out 0.3s, transform 1.4s ease-out 0.3s',
-            }}
-          >
+              transition: 'opacity 1.4s ease-out 0.3s, transform 1.4s ease-out 0.3s'
+            }}>
+
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-3 text-garden-dark-green leading-tight">Sono <span className="text-garden-accent">Magdalena Szczepanska</span>.</h2>
             <p className="text-lg md:text-xl font-medium text-foreground/80 mb-6">
               Forme Verdi è il mio progetto di garden design.
@@ -73,17 +73,17 @@ const About = () => {
           style={{
             opacity: isVisible ? 1 : 0,
             transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
-            transition: 'opacity 1.4s ease-out 0.6s, transform 1.4s ease-out 0.6s',
-          }}
-        >
-          <p className="text-xl md:text-2xl lg:text-3xl font-light text-garden-dark-green leading-snug tracking-wide font-mono">
+            transition: 'opacity 1.4s ease-out 0.6s, transform 1.4s ease-out 0.6s'
+          }}>
+
+          <p className="text-xl md:text-2xl font-light text-garden-dark-green leading-snug tracking-wide font-mono lg:text-2xl text-right">
             Sono una garden designer con base in Veneto e mi occupo di progettazione di giardini per abitazioni private.
             Lavoro principalmente tra Verona, Vicenza e Padova, sviluppando progetti su misura, con attenzione al clima locale, alla scelta botanica e alla durata nel tempo.
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default About;
