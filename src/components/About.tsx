@@ -1,12 +1,11 @@
 
-import React, { useCallback, useRef } from 'react';
+import { useCallback } from 'react';
 import { useParallax, useScrollReveal } from '@/hooks/use-parallax';
 import aboutImg from '@/assets/about-formeverdi.jpeg';
 
 const About = () => {
   const { containerRef, setTargetRef } = useParallax(0.3);
   const { ref: revealRef, isVisible } = useScrollReveal();
-  const imageWrapperRef = useRef<HTMLDivElement>(null);
 
   const imgRef = useCallback((el: HTMLImageElement | null) => {
     setTargetRef(el);

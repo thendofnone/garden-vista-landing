@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Mail, Phone, Instagram } from 'lucide-react';
 import { useScrollReveal } from '@/hooks/use-parallax';
 
@@ -51,7 +51,11 @@ const ContactForm = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  // TODO: Update this URL to your PHP server endpoint
+  /**
+   * ENDPOINT PHP PER INVIO EMAIL
+   * Aggiornare con l'URL del file send-mail.php caricato sul tuo server.
+   * Vedi php/send-mail.php e README.md per le istruzioni di configurazione.
+   */
   const PHP_ENDPOINT = 'https://your-server.com/send-mail.php';
 
   const handleSubmit = async (e: React.FormEvent) => {
