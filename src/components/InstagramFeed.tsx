@@ -1,5 +1,5 @@
 
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { Instagram } from 'lucide-react';
 import { useScrollReveal } from '@/hooks/use-parallax';
 

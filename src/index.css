@@ -135,35 +135,6 @@
   }
 }
 
-.hero-carousel .slick-dots {
-  bottom: 20px;
-}
-
-.hero-carousel .slick-dots li button:before {
-  color: white;
-  opacity: 0.5;
-}
-
-.hero-carousel .slick-dots li.slick-active button:before {
-  color: white;
-  opacity: 1;
-}
-
-.img-hover-zoom {
-  overflow: hidden;
-}
-
-.img-hover-zoom img {
-  transition: transform 0.5s ease;
-}
-
-.img-hover-zoom:hover img {
-  transform: scale(1.05);
-}
-
-.parallax-image {
-  will-change: transform;
-}
 
 .scroll-reveal {
   opacity: 0;

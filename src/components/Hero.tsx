@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import heroImg1 from '@/assets/formeverdi-01.png';
 import heroImg2 from '@/assets/formeverdi-02.png';

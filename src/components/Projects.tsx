@@ -1,22 +1,27 @@
-
-import React, { useState, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import { cn } from '@/lib/utils';
 import { useParallax, useScrollReveal } from '@/hooks/use-parallax';
 
+/**
+ * CONTENUTI PROGETTI
+ * Aggiornare i dati qui sotto con i progetti reali.
+ * Per ogni progetto servono: title, category, description, image (URL o path locale).
+ * Le immagini possono essere importate da src/assets/ oppure usare URL esterni.
+ */
 const projects = [
   {
     id: 1,
-    title: "Urban Oasis Retreat",
-    category: "Urban Gardens",
-    description: "A tranquil sanctuary designed for a busy city professional, featuring vertical gardens and a meditation pond.",
-    image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e"
+    title: "Urban Oasis Retreat",                    // TODO: titolo progetto reale
+    category: "Urban Gardens",                        // TODO: categoria reale
+    description: "A tranquil sanctuary designed for a busy city professional, featuring vertical gardens and a meditation pond.", // TODO: descrizione reale
+    image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e" // TODO: foto progetto reale
   },
   {
     id: 2,
     title: "Coastal Mediterranean Garden",
     category: "Residential",
     description: "A drought-resistant landscape with vibrant colors and textures inspired by Mediterranean coast.",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg"                         // TODO: foto progetto reale
   },
   {
     id: 3,
@@ -42,6 +47,7 @@ const Projects = () => {
       <div className="container mx-auto max-w-6xl">
         <div ref={revealRef} className={`scroll-reveal ${isVisible ? 'visible' : ''}`}>
           <div className="text-center mb-16">
+            {/* TODO: Aggiornare titolo e sottotitolo sezione progetti */}
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-garden-dark-green">I miei <span className="text-garden-accent">progetti</span></h2>
             <p className="text-lg max-w-3xl mx-auto text-foreground/80">
               Ogni giardino è una relazione tra spazio, natura e persone.
@@ -68,7 +74,7 @@ const Projects = () => {
   );
 };
 
-const ProjectCard = ({ project, index }: { project: any; index: number }) => {
+const ProjectCard = ({ project, index }: { project: typeof projects[number]; index: number }) => {
   const [isHovered, setIsHovered] = useState(false);
   const { containerRef, setTargetRef } = useParallax(0.2);
   const { ref: revealRef, isVisible } = useScrollReveal();

@@ -1,5 +1,5 @@
 
-import React from 'react';
+
 import { Instagram, Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-semibold mb-6">Quick Links</h3>
+            <h3 className="text-xl font-semibold mb-6">Navigazione</h3>
             <nav className="flex flex-col space-y-3">
               <a href="#about" className="text-white/80 hover:text-garden-accent transition-colors">Magdalena</a>
               <a href="#metodo" className="text-white/80 hover:text-garden-accent transition-colors">Metodo</a>
@@ -62,6 +62,7 @@ const Footer = () => {
                 <a href="tel:+393398046472" className="text-white/80 hover:text-white transition-colors">+39 339 804 6472</a>
               </div>
 
+              {/* TODO: Aggiornare con la Partita IVA reale */}
               <div className="flex items-center">
                 <span className="text-garden-accent mr-3 text-sm font-medium w-[18px] text-center">P.</span>
                 <span className="text-white/80">IVA 123456789121</span>
