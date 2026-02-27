@@ -73,7 +73,7 @@ const Hero = () => {
         <p className="text-3xl md:text-4xl lg:text-5xl text-garden-accent mb-6 md:mb-8 hero-text-rise drop-shadow-[0_2px_12px_rgba(229,184,110,0.4)] font-medium" style={{ animationDelay: "0.2s" }}>
           Progetto l'equilibrio tra spazio e natura
         </p>
-        <p className="text-xl md:text-2xl text-white/85 max-w-xl mb-10 md:mb-12 hero-text-rise drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]" style={{ animationDelay: "0.4s" }}>
+        <p className="text-lg md:text-xl text-white/85 max-w-xl mb-10 md:mb-12 hero-text-rise drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]" style={{ animationDelay: "0.4s" }}>
           Ogni giardino nasce dall'equilibrio tra spazio, natura e clima. Disegno ambienti verdi vivibili e destinati a durare.
         </p>
         <a
