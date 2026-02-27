@@ -58,7 +58,7 @@ const FontSwitcher = () => {
                 onClick={() => applyLogo(l)}
                 className={`flex items-center gap-2 w-full text-left px-3 py-2 rounded text-sm ${currentLogo === l.label ? 'bg-green-100 font-bold' : 'hover:bg-gray-100'}`}
               >
-                <img src={l.src} alt={l.label} className="h-8 w-auto" />
+                <img src={l.src} alt={l.label} style={{ height: '76px', width: 'auto' }} />
                 <span>{l.label} {currentLogo === l.label && '✓'}</span>
               </button>
             ))}
