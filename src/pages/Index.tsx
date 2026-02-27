@@ -9,6 +9,7 @@ import Projects from '@/components/Projects';
 import InstagramFeed from '@/components/InstagramFeed';
 import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
+import FontSwitcher from '@/components/FontSwitcher';
 
 const Index = () => {
   return (
@@ -25,6 +26,7 @@ const Index = () => {
       <WaveDivider fromColor="#ffffff" toColor="#F8F5F0" />
       <ContactForm />
       <Footer />
+      <FontSwitcher />
     </div>
   );
 };
