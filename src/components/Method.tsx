@@ -53,10 +53,10 @@ const Method = () => {
             transition: 'opacity 1.4s ease-out, transform 1.4s ease-out',
           }}
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium text-garden-dark-green mb-4 leading-tight">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-medium text-garden-dark-green mb-4 leading-tight">
             Il mio <span className="text-garden-accent">metodo</span>
           </h2>
-          <p className="text-lg md:text-xl text-secondary">
+          <p className="text-xl md:text-2xl text-secondary">
             Il mio metodo nasce dall'ascolto del luogo e dal rispetto del suo carattere.
           </p>
         </div>
@@ -73,13 +73,13 @@ const Method = () => {
                 transition: `opacity 1.4s ease-out ${0.2 + i * 0.2}s, transform 1.4s ease-out ${0.2 + i * 0.2}s`,
               }}
             >
-              <span className="block text-5xl md:text-6xl font-light text-garden-light-green mb-4 font-mono">
+              <span className="block text-6xl md:text-7xl font-light text-garden-light-green mb-4 font-mono">
                 {step.number}
               </span>
-              <h3 className="text-xl md:text-2xl font-medium text-garden-dark-green mb-3">
+              <h3 className="text-2xl md:text-3xl font-medium text-garden-dark-green mb-3">
                 {step.title}
               </h3>
-              <p className="text-base md:text-lg text-secondary leading-relaxed whitespace-pre-line">
+              <p className="text-lg md:text-xl text-secondary leading-relaxed whitespace-pre-line">
                 {step.description}
               </p>
             </div>
