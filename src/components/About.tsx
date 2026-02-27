@@ -45,12 +45,12 @@ const About = () => {
               transition: 'opacity 1.4s ease-out 0.3s, transform 1.4s ease-out 0.3s'
             }}>
 
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-3 text-garden-dark-green leading-tight">Sono <span className="text-garden-accent">Magdalena Szczepanska</span>.</h2>
-            <p className="text-lg md:text-xl font-medium text-foreground/80 mb-6">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-medium mb-3 text-garden-dark-green leading-tight">Sono <span className="text-garden-accent">Magdalena Szczepanska</span>.</h2>
+            <p className="text-xl md:text-2xl font-medium text-foreground/80 mb-6">
               Forme Verdi è il mio progetto di garden design.
             </p>
 
-            <div className="space-y-4 text-foreground text-lg md:text-xl leading-relaxed">
+            <div className="space-y-4 text-foreground text-xl md:text-2xl leading-relaxed">
               <p>
                 Nasce dalla mia formazione nella progettazione territoriale e da una sensibilità verso il paesaggio coltivata fin dall'infanzia, tra giardini, stagioni e osservazione della natura.
               </p>
@@ -76,7 +76,7 @@ const About = () => {
             transition: 'opacity 1.4s ease-out 0.6s, transform 1.4s ease-out 0.6s'
           }}>
 
-          <p className="text-xl md:text-2xl font-light text-garden-dark-green leading-snug tracking-wide font-mono lg:text-2xl text-center">
+          <p className="text-2xl md:text-3xl font-light text-garden-dark-green leading-snug tracking-wide font-mono lg:text-3xl text-center">
             Sono una garden designer con base in Veneto e mi occupo di progettazione di giardini per abitazioni private.
             Lavoro principalmente tra Verona, Vicenza e Padova, sviluppando progetti su misura, con attenzione al clima locale, alla scelta botanica e alla durata nel tempo.
           </p>

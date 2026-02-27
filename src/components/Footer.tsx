@@ -10,8 +10,8 @@ const Footer = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <h3 className="text-xl font-semibold mb-6">Forme Verdi</h3>
-            <p className="text-white/80 mb-6 max-w-xs">
+            <h3 className="text-2xl font-semibold mb-6">Forme Verdi</h3>
+            <p className="text-lg text-white/80 mb-6 max-w-xs">
               Ogni giardino nasce dall'equilibrio tra spazio, natura e clima. Disegno ambienti verdi vivibili e destinati a durare.
             </p>
             <div className="flex space-x-4">
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-semibold mb-6">Navigazione</h3>
+            <h3 className="text-2xl font-semibold mb-6">Navigazione</h3>
             <nav className="flex flex-col space-y-3">
               <a href="#about" className="text-white/80 hover:text-garden-accent transition-colors">Magdalena</a>
               <a href="#metodo" className="text-white/80 hover:text-garden-accent transition-colors">Metodo</a>
@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-semibold mb-6">Contatti</h3>
+            <h3 className="text-2xl font-semibold mb-6">Contatti</h3>
             <div className="space-y-4">
               <div className="flex items-center">
                 <Mail className="text-garden-accent mr-3" size={18} />

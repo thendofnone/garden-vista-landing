@@ -46,8 +46,8 @@ const InstagramFeed = () => {
       <div className="container mx-auto max-w-6xl" ref={revealRef}>
         <div className={`scroll-reveal ${isVisible ? 'visible' : ''}`}>
         <div className="mb-16 md:mb-20">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-4 text-garden-dark-green leading-tight">Nel <span className="text-garden-accent">tempo</span></h2>
-          <p className="text-lg md:text-xl text-secondary mb-4">Il progetto continua oltre la realizzazione.</p>
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-medium mb-4 text-garden-dark-green leading-tight">Nel <span className="text-garden-accent">tempo</span></h2>
+          <p className="text-xl md:text-2xl text-secondary mb-4">Il progetto continua oltre la realizzazione.</p>
           <a 
             href="https://instagram.com/formeverdi" 
             target="_blank" 

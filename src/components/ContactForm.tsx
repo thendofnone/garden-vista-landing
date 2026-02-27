@@ -93,8 +93,8 @@ const ContactForm = () => {
       <div className="container mx-auto max-w-6xl" ref={revealRef}>
         <div className={`scroll-reveal ${isVisible ? 'visible' : ''}`}>
         <div className="mb-16 md:mb-20">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-4 text-garden-dark-green leading-tight">Parliamo del tuo <span className="text-garden-accent">giardino</span></h2>
-          <p className="text-lg md:text-xl text-secondary">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-medium mb-4 text-garden-dark-green leading-tight">Parliamo del tuo <span className="text-garden-accent">giardino</span></h2>
+          <p className="text-xl md:text-2xl text-secondary">
             Ogni progetto inizia da una conversazione.<br />Raccontami il tuo spazio e le tue esigenze.
           </p>
         </div>
@@ -123,7 +123,7 @@ const ContactForm = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1">Nome *</label>
+                    <label htmlFor="name" className="block text-base font-medium text-foreground mb-1">Nome *</label>
                     <input
                       type="text"
                       id="name"
@@ -135,7 +135,7 @@ const ContactForm = () => {
                     {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-foreground mb-1">Email *</label>
+                    <label htmlFor="email" className="block text-base font-medium text-foreground mb-1">Email *</label>
                     <input
                       type="email"
                       id="email"
@@ -150,7 +150,7 @@ const ContactForm = () => {
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-1">Telefono</label>
+                    <label htmlFor="phone" className="block text-base font-medium text-foreground mb-1">Telefono</label>
                     <input
                       type="tel"
                       id="phone"
@@ -161,7 +161,7 @@ const ContactForm = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="projectType" className="block text-sm font-medium text-foreground mb-1">Tipo di progetto</label>
+                    <label htmlFor="projectType" className="block text-base font-medium text-foreground mb-1">Tipo di progetto</label>
                     <select
                       id="projectType"
                       name="projectType"
@@ -180,7 +180,7 @@ const ContactForm = () => {
                 </div>
                 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-foreground mb-1">Messaggio *</label>
+                  <label htmlFor="message" className="block text-base font-medium text-foreground mb-1">Messaggio *</label>
                   <textarea
                     id="message"
                     name="message"
@@ -195,7 +195,7 @@ const ContactForm = () => {
                 <div className="text-right">
                   <button
                     type="submit"
-                    className="bg-garden-dark-green text-white px-8 py-3 rounded-md hover:bg-garden-light-green transition-colors duration-300 font-medium disabled:opacity-70"
+                    className="bg-garden-dark-green text-white px-10 py-4 text-lg rounded-md hover:bg-garden-light-green transition-colors duration-300 font-medium disabled:opacity-70"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? 'Invio...' : 'Raccontami il tuo spazio'}

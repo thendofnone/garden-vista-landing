@@ -48,8 +48,8 @@ const Projects = () => {
         <div ref={revealRef} className={`scroll-reveal ${isVisible ? 'visible' : ''}`}>
           <div className="mb-16 md:mb-20">
             {/* TODO: Aggiornare titolo e sottotitolo sezione progetti */}
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-4 text-garden-dark-green leading-tight">I miei <span className="text-garden-accent">progetti</span></h2>
-            <p className="text-lg md:text-xl text-secondary">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-medium mb-4 text-garden-dark-green leading-tight">I miei <span className="text-garden-accent">progetti</span></h2>
+            <p className="text-xl md:text-2xl text-secondary">
               Ogni giardino è una relazione tra spazio, natura e persone.
             </p>
           </div>
@@ -101,8 +101,8 @@ const ProjectCard = ({ project, index }: { project: typeof projects[number]; ind
           "absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent transition-all duration-300",
           isHovered ? "h-full flex flex-col justify-end" : "h-1/2"
         )}>
-          <span className="text-garden-accent text-sm uppercase tracking-wider">{project.category}</span>
-          <h3 className="text-xl font-bold text-white mt-2">{project.title}</h3>
+          <span className="text-garden-accent text-base uppercase tracking-wider">{project.category}</span>
+          <h3 className="text-2xl font-bold text-white mt-2">{project.title}</h3>
           <p className={cn(
             "text-white/80 mt-2 transition-opacity duration-300",
             isHovered ? "opacity-100" : "opacity-0 md:opacity-100"
