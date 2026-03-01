@@ -75,7 +75,7 @@ const NavLink = ({ href, children }: { href: string; children: React.ReactNode }
   return (
     <a 
       href={href} 
-      className="relative text-lg font-medium text-garden-dark-green hover:text-garden-light-green transition-colors duration-200 after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-garden-accent after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
+      className="relative text-lg font-light text-garden-dark-green hover:text-garden-light-green transition-colors duration-200 after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-garden-accent after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
     >
       {children}
     </a>
@@ -95,7 +95,7 @@ const MobileNavLink = ({
     <a
       href={href}
       onClick={onClick}
-      className="text-2xl font-medium text-garden-dark-green hover:text-garden-light-green transition-colors duration-200"
+      className="text-2xl font-light text-garden-dark-green hover:text-garden-light-green transition-colors duration-200"
     >
       {children}
     </a>
