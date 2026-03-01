@@ -67,8 +67,8 @@ const Hero = () => {
         className="relative z-10 h-full px-6 md:px-12 lg:px-20 flex flex-col items-start justify-end pb-28 md:pb-32 lg:pb-36"
         style={{ transform: `translateY(${scrollY * -0.2}px)` }}>
 
-        <h1 className="text-6xl md:text-8xl lg:text-9xl text-white mb-4 md:mb-6 hero-text-rise drop-shadow-[0_4px_24px_rgba(0,0,0,0.5)] font-medium font-sans leading-[1.1]">
-          Forme Verdi
+        <h1 className="text-6xl md:text-8xl lg:text-9xl text-white mb-4 md:mb-6 hero-text-rise drop-shadow-[0_4px_24px_rgba(0,0,0,0.5)] leading-[1.1] font-normal font-sans">forme verdi
+
         </h1>
         <p className="text-3xl md:text-4xl lg:text-5xl text-garden-accent mb-6 md:mb-8 hero-text-rise drop-shadow-[0_2px_12px_rgba(229,184,110,0.4)] font-medium" style={{ animationDelay: "0.2s" }}>
           Progetto l'equilibrio tra spazio e natura
@@ -85,21 +85,21 @@ const Hero = () => {
       </div>
 
       {/* VIDEO HERO — commented out for future use
-        <div className="absolute inset-0 w-full h-full">
-         <video
-           ref={videoRef}
-           autoPlay
-           muted
-           loop
-           className="object-cover w-full h-full"
-           playsInline
-           style={{ transform: `translateY(${scrollY * 0.4}px) scale(1.1)` }}
-         >
-           <source src="/garden-design.mp4" type="video/mp4" />
-         </video>
-         <div className="absolute inset-0 bg-black/40" />
-        </div>
-        */}
+                <div className="absolute inset-0 w-full h-full">
+                 <video
+                   ref={videoRef}
+                   autoPlay
+                   muted
+                   loop
+                   className="object-cover w-full h-full"
+                   playsInline
+                   style={{ transform: `translateY(${scrollY * 0.4}px) scale(1.1)` }}
+                 >
+                   <source src="/garden-design.mp4" type="video/mp4" />
+                 </video>
+                 <div className="absolute inset-0 bg-black/40" />
+                </div>
+                */}
     </section>);
 
 };
