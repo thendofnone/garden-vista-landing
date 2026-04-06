@@ -1,7 +1,7 @@
 
 import { useCallback } from 'react';
 import { useParallax, useScrollReveal } from '@/hooks/use-parallax';
-import aboutImg from '@/assets/about-formeverdi.jpeg';
+import aboutImg from '@/assets/about-formeverdi.webp';
 
 const About = () => {
   const { containerRef, setTargetRef } = useParallax(0.3);
