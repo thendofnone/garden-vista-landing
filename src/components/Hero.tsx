@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import heroImg1 from '@/assets/formeverdi-01.png?url';
+import heroImg1 from '@/assets/formeverdi-01.png';
 import heroImg2 from '@/assets/formeverdi-02.png';
 import heroImg3 from '@/assets/formeverdi-03.png';
 
