@@ -7,6 +7,13 @@ import heroImg3 from '@/assets/formeverdi-03.png';
 
 const heroImages = [heroImg1, heroImg2, heroImg3];
 
+// Preload first hero image for faster LCP
+const preloadLink = document.createElement('link');
+preloadLink.rel = 'preload';
+preloadLink.as = 'image';
+preloadLink.href = heroImg1;
+document.head.appendChild(preloadLink);
+
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
